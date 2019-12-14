@@ -1,7 +1,7 @@
 # raynode
 
 Example application:
-```
+```crystal
 require "raynode"
 
 # Handlers
