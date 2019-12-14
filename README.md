@@ -1,4 +1,4 @@
-# raynode
+# Raynode
 
 Example application:
 ```crystal
