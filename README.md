@@ -1,6 +1,16 @@
 # raynode
 
-TODO: Write a description here
+Example application:
+```
+# Handlers
+def index() return "MAIN PAGE" end
+def sup() return "SUP PAGE" end
+
+# Route+method combos
+ROUTES = {"/" => index, "/r/sup" => sup}
+Raynode.new(ROUTES, 8080)
+```
+
 
 ## Installation
 
