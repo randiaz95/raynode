@@ -1,15 +1,25 @@
 # Raynode
 
-Example application:
+`MicroAPIFramework for Crystal Programming Language`
+
+## Usage
 ```crystal
 require "raynode"
 
-# Handlers
-def index() return "MAIN PAGE" end
-def sup() return "SUP PAGE" end
+# Handlers for each route.
+def index() 
+  return "MAIN PAGE" 
+end
 
-# Route+method combos
-ROUTES = {"/" => index, "/r/sup" => sup}
+def sup() 
+  return "SUP PAGE" 
+end
+
+# Route Definitions.
+ROUTES = {"/" => index, 
+          "/r/sup" => sup}
+
+# Listen and Serve...
 Raynode::App.new(ROUTES, 8080)
 ```
 
