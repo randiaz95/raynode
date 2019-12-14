@@ -1,7 +1,7 @@
-# TODO: Write documentation for `Raynode`
+require "http/server"
 module Raynode
   VERSION = "0.1.0"
-  class Raynode
+  class App
     def initialize(routes, port)
       server = HTTP::Server.new do |context|
         context.response.content_type = "text/html"
