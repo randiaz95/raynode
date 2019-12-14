@@ -31,8 +31,6 @@ Raynode.new(ROUTES, 8080)
 ```crystal
 require "raynode"
 
-Example application:
-```
 # Handlers
 # Create all of the functions here.
 def index() 
@@ -48,7 +46,6 @@ ROUTES = {"/" => index, "/r/sup" => sup}
 
 # Listen and serve Raynode.
 Raynode.new(ROUTES, 8080)
-```
 ```
 
 ## TODOS:
