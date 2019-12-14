@@ -10,7 +10,7 @@ def sup() return "SUP PAGE" end
 
 # Route+method combos
 ROUTES = {"/" => index, "/r/sup" => sup}
-Raynode.new(ROUTES, 8080)
+Raynode::App.new(ROUTES, 8080)
 ```
 
 
