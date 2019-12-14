@@ -45,7 +45,7 @@ end
 ROUTES = {"/" => index, "/r/sup" => sup}
 
 # Listen and serve Raynode.
-Raynode.new(ROUTES, 8080)
+Raynode::App.new(ROUTES, 8080)
 ```
 
 ## TODOS:
