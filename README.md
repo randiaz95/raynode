@@ -2,6 +2,8 @@
 
 Example application:
 ```
+require "raynode"
+
 # Handlers
 def index() return "MAIN PAGE" end
 def sup() return "SUP PAGE" end
@@ -19,7 +21,7 @@ Raynode.new(ROUTES, 8080)
    ```yaml
    dependencies:
      raynode:
-       github: your-github-user/raynode
+       github: https://github.com/randiaz95/raynode
    ```
 
 2. Run `shards install`
@@ -28,13 +30,30 @@ Raynode.new(ROUTES, 8080)
 
 ```crystal
 require "raynode"
+
+Example application:
+```
+# Handlers
+# Create all of the functions here.
+def index() 
+  return "MAIN PAGE" 
+end
+
+def sup() 
+  return "SUP PAGE" 
+end
+
+# put a route to connnect to the function.
+ROUTES = {"/" => index, "/r/sup" => sup}
+
+# Listen and serve Raynode.
+Raynode.new(ROUTES, 8080)
+```
 ```
 
-TODO: Write usage instructions here
+## TODOS:
 
-## Development
-
-TODO: Write development instructions here
+We need everything lol this is just a routing app for now...
 
 ## Contributing
 
@@ -46,4 +65,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [your-name-here](https://github.com/your-github-user) - creator and maintainer
+- [Randy Diaz](https://github.com/randiaz95) - creator and maintainer
